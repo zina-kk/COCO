@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+html {scroll-behavior: smooth;}
+
+html body {color: black; display: block;}
+
+img {max-width: 100%;}
+
+header { margin: auto; padding: 28px; background: black; color: white;}
+header h1 { text-align: center;}
+
+#layout { max-width:1200px; margin: auto; padding: 10px; display: flex; flex-wrap: wrap;}
+nav {flex: 1;}
+nav ul li { list-style-type: none;}
+nav ul a {position: relative;
+     color: black; text-decoration: none; left: 0; padding: 10px 10px 10px 0; display: block; text-align: center;
+}
+nav ul li:hover a{background:black;}
+nav ul a:hover {color: white;}
+
+#cha { flex:2.5; padding: 20px; align-items: center; }
+#cha h2 {padding: 0 10 20 0px;}
+#cha p {padding: 10px; text-align: justify; line-height: 170%;}
+#cha p img{width: 70px; padding: 5px; float: left;}
+#cha figure {margin: 10px; padding-top: 20px; text-align: center;}
+
+#nel { flex:1.2; height: 840px;  text-align: justify; margin-left: 10px;
+ padding: 20px; background: black; color: white; border-radius: 20px;}
+
+#nel p{padding: 20px;}
+
+footer { background: black; height: 180px; color: white; text-align: center; padding: 70px; margin-top: 40px;}
+
+
+@media (max-width:1001px) {
+   #nel {flex:initial; width: 100%; height: initial;} 
+}
+@media (max-width:501px){
+    #cha {flex:initial; width: 100%;}
+}
+
+
+
+
